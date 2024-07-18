@@ -1,0 +1,62 @@
+/* styles.css */ 
+ 
+@keyframes fadeIn { 
+    from { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    } 
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    } 
+} 
+ 
+body { 
+    font-family: Arial, sans-serif; 
+    margin: 20px; 
+} 
+ 
+.container { 
+    max-width: 800px; 
+    margin: 0 auto; 
+    animation: fadeIn 0.5s ease-out; /* Faster fadeIn animation for .container */ 
+} 
+ 
+.items { 
+    display: flex; 
+    justify-content: space-around; 
+    margin-bottom: 20px; 
+    animation: fadeIn 0.5s ease-out; /* Faster fadeIn animation for .items */ 
+} 
+ 
+.item { 
+    text-align: center; 
+    animation: fadeIn 0.5s ease-out; /* Faster fadeIn animation for .item */ 
+} 
+ 
+.item img { 
+    max-width: 100px; 
+    margin-bottom: 10px; 
+} 
+ 
+.cart, .bill, .qr { 
+    border: 1px solid #ccc; 
+    padding: 10px; 
+    margin-bottom: 20px; 
+    animation: fadeIn 0.5s ease-out; /* Faster fadeIn animation for .cart, .bill, .qr */ 
+} 
+ 
+.cart, .bill, .qr button { 
+    display: block; 
+    margin: 10px auto; 
+    padding: 10px 20px; 
+    background-color: #007bff; 
+    color: white; 
+    border: none; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; /* Add transition effect to button hover */ 
+} 
+ 
+.cart button:hover, .bill button:hover, .qr button:hover { 
+    background-color: #0056b3; 
+} 
